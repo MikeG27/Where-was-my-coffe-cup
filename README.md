@@ -12,7 +12,7 @@
 ![2](https://user-images.githubusercontent.com/21131348/73873806-9c98d000-4852-11ea-89e6-e914baf3b402.png)
 
 
-## Example 3 
+## Under the hood...
 
 ![debug](https://user-images.githubusercontent.com/21131348/73875791-1ed6c380-4856-11ea-8efd-254b53e880e7.jpg)
 
