@@ -79,36 +79,38 @@ if __name__ =="__main__":
     cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
     cnts = imutils.grab_contours(cnts)
 
-    filtered_countours = filter_contours(cnts,200)
+    filtered_countours = filter_contours(cnts,5000)
     append_boxes_to_image(imageB,filtered_countours)
 
     # save input
-    cv2.imwrite(os.path.join(output_dir,"input.png"),imageA)
-    cv2.imwrite(os.path.join(output_dir,"output.png"), imageB)
+    cv2.imwrite(os.path.join(output_dir,"orginal.jpg"),imageA)
+    cv2.imwrite(os.path.join(output_dir,"modified.jpg"), imageB)
 
     # save debug
-    plt.figure()
+    plt.figure(figsize=(30,20))
 
     plt.subplot(2,2,1)
     plt.axis("off")
-    plt.title("First image")
-    plt.imshow(cv2.cvtColor(imageA, cv2.COLOR_BGR2RGB)) #"Original"
+    plt.title("First image",fontsize = 30)
+    plt.imshow(cv2.cvtColor(imageA, cv2.COLOR_BGR2RGB),aspect="auto") #"Original"
 
     plt.subplot(2,2,2)
     plt.axis("off")
-    plt.title("Second image")
-    plt.imshow(cv2.cvtColor(imageB, cv2.COLOR_BGR2RGB)) #"Modiied",
+    plt.title("Second image",fontsize = 30)
+    plt.imshow(cv2.cvtColor(imageB, cv2.COLOR_BGR2RGB),aspect="auto") #"Modiied",
 
     plt.subplot(2,2,3)
     plt.axis("off")
-    plt.title("Diff")
-    plt.imshow(diff,cmap="gray") # "Diff",
+    plt.title("Diff",fontsize = 30)
+    plt.imshow(diff,cmap="gray",aspect="auto") # "Diff",
 
     plt.subplot(2,2,4)
     plt.axis("off")
-    plt.imshow(thresh,cmap="gray") # Tresh
-    plt.title("Threshhold")
+    plt.imshow(thresh,cmap="gray",aspect="auto") # Tresh
+    plt.title("Threshhold",fontsize = 30)
+    plt.subplots_adjust(wspace=-0.1, hspace=0.1)
 
-    plt.savefig(os.path.join(output_dir,"debug.png"))
+
+    plt.savefig(os.path.join(output_dir,"debug.jpg"))
 
     print("Process was done ")
