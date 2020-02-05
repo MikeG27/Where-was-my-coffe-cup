@@ -2,22 +2,24 @@
 
 This python script is looking for difference between images and boundbox difference between them  : 
 
-<Image>
+![1](https://user-images.githubusercontent.com/21131348/73843786-9b01e480-481f-11ea-930d-ecc2eccc1552.png)
+
 
 ## Getting Started 
 
-### Install: 
+### Install:
+
 
 ```bash
-git clone "https://github.com/MikeG27/github_automation.git"
-cd Github-automation
+git clone "https://github.com/MikeG27/Where-is-my-coffe-cup.git"
+cd Where-is-my-coffe-cup.git
 pip install -r requirements.txt
 ```
 
 
 ### Usage:
 ```bash
-python image_diff.py -first [image1_path] -second  [image2_path] -output "output"
+python image_diff.py -first [image1_path] -second  [image2_path] -output [output_path]
 
 ```
 
