@@ -1,6 +1,6 @@
 # Where is my coffe cup ?
 
-This python script is looking for difference between images and boundbox difference between them  : 
+"Where is my coffee cup" is a simple research and fun project where computer vision program looking for difference between images and mark them by boundbox
 
 ![1](https://user-images.githubusercontent.com/21131348/73843786-9b01e480-481f-11ea-930d-ecc2eccc1552.png)
 
