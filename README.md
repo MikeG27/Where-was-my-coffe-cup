@@ -46,6 +46,6 @@ https://www.pyimagesearch.com/2014/09/15/python-compare-two-images/
 https://www.pyimagesearch.com/2017/06/19/image-difference-with-opencv-and-python/
 
 ---
-**Created with :heart:**
+**Created with :coffee:**
 
 ``By Michal Gorski``
