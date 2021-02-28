@@ -23,7 +23,7 @@
 
 
 ```bash
-git clone "https://github.com/MikeG27/Where-is-my-coffe-cup.git"
+git clone "https://github.com/MikeG27/Where-was-my-coffe-cup.git"
 cd Where-is-my-coffe-cup
 pip install -r requirements.txt
 ```
